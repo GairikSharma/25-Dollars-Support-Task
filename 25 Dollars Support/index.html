@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="App">
+        <div class="container">
+            <!-- main heading -->
+                <div class="main-heading">
+                    <div class="heading-icon">
+                        <i class='fas fa-arrow-left' style='font-size:18px'></i>
+                    </div>
+                    <div class="heading success-dark">
+                        Puneet Apple Farm
+                    </div>
+                </div>
+            <!-- main heading -->
+
+
+            <!-- stepup -->
+
+                <div class="step-up mt-3 mb-3 mr-4">
+                    <div class="bag-first">
+                        <div class="step-first">
+                            <div class="dot-first">
+
+                            </div>
+                            <span class="bag-text">Bag</span>
+                        </div>
+                    </div>
+
+                    <div class="bag">
+                        <div class="step">
+                            <div class="dot">
+                                
+                            </div>
+                            <span class="address-text">Address</span>
+                        </div>
+                    </div>
+
+                    <div class="bag ml-3">
+                        <div class="step">
+                            <div class="dot">
+                                
+                            </div>
+                            <span class="payment-text">Payment</span>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- stepup -->
+            <!-- all-orders-heading -->
+            <div class="success-dark price-details">
+                <div class="success-dark price-detail mt-2 mb-2" style="margin-left: -10px;">Your Order</div>
+            </div>
+            <!-- card 1 -->
+            <div class="item-card mt-1">
+
+                <div class="left">
+                    <div class="success-dark">Apple</div>
+                    <div class="success-light mt-2" style="font-size: 11px;">Unit: 1kg</div>
+                    <div class="rs mt-5">Rs <span class="success-dark">250/-</span></div>
+                    <div class="availability success-lighter" style="font-size: 9px; color: rgb(13, 176, 122);">In stock</div>
+                </div>
+                <div class="mid">
+                    <button class="lighter-btn quantitydec" onclick="dec()">-</button>
+                    <span class="m-3 quantity" style="color: rgb(13, 176, 122); font-weight: 600;" id="quantity">3</span>
+                    <button class="lighter-btn quantityinc" onclick="inc()">+</button>
+                </div>
+                <div class="right">
+                    
+                    <div>Total:</div>
+                    <div class="total-price">Rs <span style="color: rgb(13, 176, 122); font-weight: 600;">750/-</span></div>
+                </div>
+                <i class="fa fa-trash-o trash-icon" style="font-size:18px"></i>
+                
+            </div>
+
+            <!-- card 2 -->
+            <div class="item-card mt-1">
+
+                <div class="left">
+                    <div class="success-dark">Apple</div>
+                    <div class="success-light mt-2">Unit: 1kg</div>
+                    <div class="rs mt-5">Rs <span class="success-dark">250/-</span></div>
+                    <div class="availability success-lighter">In stock</div>
+                </div>
+                <div class="mid">
+                    <button class="lighter-btn">-</button>
+                    <span class="m-3">0</span>
+                    <button class="lighter-btn">+</button>
+                </div>
+                <div class="right">
+                    <div>Total:</div>
+                    <div class="total-price">Rs 750/-</div>
+                </div>
+                
+            </div>
+
+            <!-- card 3 -->
+
+            <div class="item-card mt-1">
+
+                <div class="left">
+                    <div class="success-dark">Apple</div>
+                    <div class="success-light mt-2">Unit: 1kg</div>
+                    <div class="rs mt-5">Rs <span class="success-dark">250/-</span></div>
+                    <div class="availability success-lighter">In stock</div>
+                </div>
+                <div class="mid">
+                    <button class="lighter-btn">-</button>
+                    <span class="m-3">0</span>
+                    <button class="lighter-btn">+</button>
+                </div>
+                <div class="right">
+                    <div>Total:</div>
+                    <div class="total-price">Rs 750/-</div>
+                </div>
+                
+            </div>
+
+
+            <div class="add-more m-1">
+                <div class="success-dark add-more-text ml-2">Add more products</div>
+                <div class="add-more-icon mr-3"><i class="fa fa-angle-right" style="font-size:18px"></i></div>
+            </div>
+
+            <div class="price-details">
+                <div class="success-dark price-detail mt-2 mb-2" style="margin-left: -10px;">Price details</div>
+            </div>
+
+            <div class="total-mrp">
+                <div class="text ml-2">
+                    <div class="success-light">Total MRP</div>
+                    <div class="success-light mt-2">Convenience Free</div>
+                </div>
+                <div class="rupee success-light">
+                    <div style="font-weight: 400;">Rs 1125</div>
+                    <div  style="font-weight: 400;" class="mt-2">Rs 99</div>
+                </div>
+            </div>
+            
+            <div class="total-amount mt-1">
+                <div class="total-amount-text ml-2 success-dark">Total Amount</div>
+                <div class="total-price success-dark ml-5">Rs <span style="color: #21f3c99f; font-weight:600; margin-left: 5px;">3456</span></div>
+            </div>
+
+            <button class="order mt-3">Place Order</button>
+
+        </div>
+    </div>
+</body>
+</html>

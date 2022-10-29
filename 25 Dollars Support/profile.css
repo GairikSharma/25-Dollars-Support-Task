@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 150vh;
+}
+
+.App-profile {
+    width: 100vw;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-container {
+    width: 25vw;
+    height: 125vh;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgba(172, 208, 242, 0.091);
+
+    position: relative;
+}
+
+.cover-pic {
+    width: 100%;
+    height: 200px;
+}
+
+.cover-pic img {
+    width: 100%;
+    height: 200px;
+}
+
+.profile {
+    width: 100%;
+    height: 50px;
+    /* background-color: aqua; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    transform: translate(-15px, -25px);
+    border: 3px solid white;
+}
+
+.shop-id {
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.description {
+    width: 85%;
+    height: 150px;
+    /* background-color: aquamarine; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.name-edit {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.delivery-location {
+    width: 85%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    width: 100%;
+    /* display: flex;
+    flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    /* background-color: rgba(63, 238, 185, 0.566); */
+
+}
+
+.shop-description {
+    width: 85%;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+
+.header .heading {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header .edit-des {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+textarea {
+    width: 100%;
+
+}
+.desc-text {
+    background-color: white;
+}
+
+.payment {
+    width: 85%;
+}
+.payment-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.payment-card-one {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border-radius: 7px;
+    align-items: center;
+}
+
+.card-pay-two {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border-radius: 7px;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+    box-shadow: 2px -9px 45px 11px rgba(230,247,242,1);
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 14px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  /* top: -0.1px; */
+  left: 0px;
+  bottom: -1.5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgba(168, 236, 215, 0.566);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #21f3c99f;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+  background-color: rgb(13, 176, 122);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
